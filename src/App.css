@@ -243,4 +243,25 @@ input:focus {
   margin-left: 0.5rem; /* Add space between buttons */
 }
 
-/* Rest of your CSS remains the same */
+/* Add CSS for Mobile Screens */
+@media only screen and (max-width: 600px) {
+  .child-div figure img {
+    width: 7rem; /* Reduce image size */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  input {
+    min-width: 90%; /* Make input field width responsive */
+    margin: 1rem auto; /* Center-align input field */
+  }
+
+  .eachItem {
+    min-width: 90%; /* Make todo item width responsive */
+    margin-left: auto; /* Center-align todo items */
+    margin-right: auto;
+  }
+
+  .showItems {
+    margin-top: 1rem; /* Reduce margin-top for better spacing */
+  }
+}
